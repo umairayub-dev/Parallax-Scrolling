@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="#" class="logo">Logo</a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 id="hello-winter">Hello Winter</h2>
+            <img src="./images/monutain_01.png" alt="monutain_01" id="mountain1">
+            <img src="./images/monutain_02.png" alt="monutain_02" id="mountain2">
+            <img src="./images/monutain_03.png" alt="monutain_03" id="mountain3">
+            <img src="./images/monutain_04.png" alt="monutain_04" id="mountain4">
+            <img src="./images/trees.png" alt="Tree" id="trees">
+            <img src="./images/cable_cars.png" alt="Cable Cars" id="cableCars">
+            <img src="./images/house.png" alt="House" id="house">
+        </section>
+        <div class="sec">
+            <h2>Parallax Scrolling</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis eaque et modi nesciunt omnis fugit
+                alias incidunt similique aut ab recusandae, dolores in sunt odit aliquam repellendus voluptate, saepe
+                esse facilis quaerat labore. Aliquam id molestiae quia possimus esse facilis ipsa ipsum modi voluptatum,
+                sed repudiandae voluptate. Nesciunt nostrum, iure odit autem beatae sed porro libero suscipit
+                recusandae, quidem laboriosam corporis voluptatum reiciendis optio earum a sint consequatur voluptatem
+                rerum quia modi eos repellat accusantium mollitia. Minima ea ipsa iste maiores velit quis ipsum. Sequi
+                alias eveniet vel rerum aspernatur officiis voluptates corporis aliquid accusantium quas tempore,
+                adipisci reprehenderit voluptatem excepturi, cum quae ratione. Ad assumenda et, optio laudantium, soluta
+                dolorem veniam tempora quisquam, voluptatum libero iure reprehenderit! Odit tenetur atque labore numquam
+                aperiam, debitis rem. Autem vitae corrupti distinctio impedit, ab modi provident assumenda nobis vero
+                accusamus, repellendus non omnis id exercitationem ea iure porro hic pariatur? Iusto ex accusamus
+                quisquam quo officia voluptates incidunt, officiis pariatur aut, aperiam omnis obcaecati itaque,
+                similique sapiente? Fuga, necessitatibus explicabo ab, sint ipsam dolores incidunt deleniti
+                exercitationem, mollitia inventore sapiente veritatis. Cumque voluptates ullam modi, veritatis quo
+                beatae numquam natus vel nam, quibusdam amet magnam sapiente dicta illum velit nulla dolorem dolores
+                fugiat suscipit hic repellat. Porro ullam distinctio officiis nemo amet iste itaque voluptatibus eum,
+                qui animi eligendi ab nisi molestias, cumque excepturi similique accusantium delectus, esse explicabo
+                sed asperiores. Ipsum recusandae delectus illo unde eum excepturi explicabo alias voluptas eaque sequi?
+                Vitae dolores quibusdam blanditiis eius? Aliquam distinctio temporibus autem! <br><br> Lorem ipsum,
+                dolor sit amet consectetur adipisicing elit. Repudiandae qui nisi voluptatem? Doloremque suscipit dolore
+                dicta reiciendis aliquam enim ntore sapiente veritatis. Cumque voluptates ullam modi, veritatis quo
+                beatae numquam natus vel nam, quibusdam amet magnam sapiente dicta illum velit nulla dolorem dolores
+                fugiat suscipit hic repellat. Porro ullam distinctio officiis nemo amet iste itaque voluptatibus eum,
+                qui animi eligendi ab nisi molestias, cumque excepturi similique accusantium delectus, esse explicabo
+                sed asperiores. Ipsum recusandae dl nam, quibusdam amet magnam sapiente dicta illum velit nulla dolorem dolores
+                fugiat suscipit hic repellat. Porro ullam distinctio officiis nemo amet iste itaque voluptatibus eum,
+                qui animi eligendi ab nisi molestias, cumque excepturi similique accusantium delectus, esse explicabo
+                sed asperiores. Ipsum recusandae nam, quibusdam amet magnam sapiente dicta illum velit nulla dolorem dolores
+                fugiat suscipit hic repellat. Porro ullam distinctio officiis nemo amet iste itaque voluptatibus eum,
+                qui animi eligendi ab nisi molestias, cumque excepturi similique accusantium delectus, esse explicabo
+                sed asperiores. Ipsum recusandae delectus illo unde eum excepturi explicabo alias voluptas eaque sequi?
+                Vitae dolores quibusdam blanditiis eius? Aliquam distinctio temporibus autem!
+                amet, libero aliquid numquam sed.</p>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.from("#hello-winter", {
+            scrollTrigger: {
+                scrub: true
+            },
+            x: 350,
+        }) 
+        gsap.from("#mountain1", {
+            scrollTrigger: {
+                scrub: true
+            },
+            y: 100,
+        })
+        gsap.from("#mountain2", {
+            scrollTrigger: {
+                scrub: true
+            },
+            y: 50,
+        })
+        gsap.from("#mountain3", {
+            scrollTrigger: {
+                scrub: true
+            },
+            y: 200,
+        })
+        gsap.from("#mountain4", {
+            scrollTrigger: {
+                scrub: true
+            },
+            y: 150,
+        })
+        gsap.from("#trees", {
+            scrollTrigger: {
+                scrub: true
+            },
+            y: 150,
+        })  
+        gsap.from("#cableCars", {
+            scrollTrigger: {
+                scrub: true
+            },
+            x: 100,
+        })  
+        gsap.from("#house", {
+            scrollTrigger: {
+                scrub: true
+            },
+            y: 50,
+        })  
+    </script>
+</body>
+
+</html>
